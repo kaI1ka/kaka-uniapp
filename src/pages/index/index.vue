@@ -62,13 +62,13 @@ function copy(data: string) {
 <template>
   <view class="content">
     <WeappTailwindcss />
-    <view class="my-3 w-full border-t border-solid border-gray-200" />
+    <view class="my-3 w-full    border-t border-solid border-gray-200" />
     <view class="text-xl text-gray-600/95">
       写法示例Start!
     </view>
-    <view class="mt-[13.14758px] flex flex-col items-center space-y-[20rpx]">
+    <view class="mt-[13.14758px] flex flex-col    items-center space-y-[20rpx]">
       <view
-        class="flex h-16 w-32 items-center justify-center rounded-[20rpx] bg-[#389f2bb1] text-white after:content-['hover_here!']"
+        class="flex    h-16 w-32 items-center justify-center rounded-[20rpx] bg-[#389f2bb1] text-white after:content-['hover_here!']"
         hover-class="!bg-[gray] after:!content-['good_work!']"
       />
       <view class="text-neutral-400">
