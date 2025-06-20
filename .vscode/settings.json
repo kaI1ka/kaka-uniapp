@@ -100,5 +100,6 @@
     "vue",
     "css",
     "scss"
-  ]
+  ],
+  "oxc.enable": true
 }
