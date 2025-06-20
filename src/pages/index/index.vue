@@ -66,7 +66,7 @@ function copy(data: string) {
     <view class="text-xl text-gray-600/95">
       写法示例Start!
     </view>
-    <view class="mt-[13.14758px] flex flex-col    items-center space-y-[20rpx]">
+    <view class="mt-[13.14758px]  flex    flex-col items-center space-y-[20rpx]">
       <view
         class="flex    h-16 w-32 items-center justify-center rounded-[20rpx] bg-[#389f2bb1] text-white after:content-['hover_here!']"
         hover-class="!bg-[gray] after:!content-['good_work!']"
