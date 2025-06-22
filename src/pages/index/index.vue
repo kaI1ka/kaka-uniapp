@@ -1,3 +1,1 @@
-<template>
-  index
-</template>
+<template>index</template>

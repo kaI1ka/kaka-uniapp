@@ -3,6 +3,7 @@
     "dbaeumer.vscode-eslint",
     "oxc.oxc-vscode",
     "stylelint.vscode-stylelint",
+    "esbenp.prettier-vscode",
     "bradlc.vscode-tailwindcss",
     "vue.volar",
     "uni-helper.uni-app-snippets-vscode",

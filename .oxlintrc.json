@@ -1,7 +1,15 @@
 {
+  "plugins": [
+    "typescript",
+    "unicorn",
+    "oxc",
+    "import",
+    "jsdoc",
+    "node",
+    "promise"
+  ],
   "rules": {
-    "no-console": "warn",
-    "no-unused-vars": "off",
-    "curly": ["error", "all"]
-  }
+    "curly": "error"
+  },
+  "ignorePatterns": ["src/node_modules/**"]
 }
