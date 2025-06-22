@@ -4,6 +4,8 @@
     "oxc.oxc-vscode",
     "stylelint.vscode-stylelint",
     "bradlc.vscode-tailwindcss",
-    "vue.volar"
+    "vue.volar",
+    "uni-helper.uni-app-snippets-vscode",
+    "uni-helper.uni-app-schemas-vscode"
   ]
 }

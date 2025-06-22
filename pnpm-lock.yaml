@@ -96,6 +96,9 @@ importers:
       '@types/node':
         specifier: ^24.0.3
         version: 24.0.3
+      '@uni-helper/uni-app-types':
+        specifier: 1.0.0-alpha.6
+        version: 1.0.0-alpha.6(typescript@5.8.3)(vue@3.4.21(typescript@5.8.3))
       '@vue/runtime-core':
         specifier: ^3.4.21
         version: 3.4.21
@@ -2297,6 +2300,13 @@ packages:
   '@typescript-eslint/visitor-keys@8.34.1':
     resolution: {integrity: sha512-xoh5rJ+tgsRKoXnkBPFRLZ7rjKM0AfVbC68UZ/ECXoDbfggb9RbEySN359acY1vS3qZ0jVTVWzbtfapwm5ztxw==, tarball: https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.34.1.tgz}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@uni-helper/uni-app-types@1.0.0-alpha.6':
+    resolution: {integrity: sha512-t9AKDYBmDaz4IW0fgtBt25ubEzf7kyUeMlHaBaG5nyNGd6pVuDpYkABhsnNPDiZcaHAoN6SbX1SQQx5axDOWbA==, tarball: https://registry.npmjs.org/@uni-helper/uni-app-types/-/uni-app-types-1.0.0-alpha.6.tgz}
+    engines: {node: '>=14.18'}
+    peerDependencies:
+      typescript: ^5.0.0
+      vue: ^3.0.0
 
   '@unocss/config@66.2.3':
     resolution: {integrity: sha512-Xd2P1NgD7poYKDMI176yPvmMojBbc1HH26dgG8OYpNiBuzdhdLuyfSLPbpAOXPSyoK8Fu2BikS+NLTWQ8MmgFQ==, tarball: https://registry.npmjs.org/@unocss/config/-/config-66.2.3.tgz}
@@ -9874,6 +9884,11 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.34.1
       eslint-visitor-keys: 4.2.1
+
+  '@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@5.8.3)(vue@3.4.21(typescript@5.8.3))':
+    dependencies:
+      typescript: 5.8.3
+      vue: 3.4.21(typescript@5.8.3)
 
   '@unocss/config@66.2.3':
     dependencies:

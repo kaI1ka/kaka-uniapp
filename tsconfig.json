@@ -9,7 +9,7 @@
     "useDefineForClassFields": true,
     "baseUrl": ".",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "paths": {
       "@/*": [
         "src/*"
@@ -17,7 +17,8 @@
     },
     "resolveJsonModule": true,
     "types": [
-      "@dcloudio/types"
+      "@dcloudio/types",
+      "@uni-helper/uni-app-types"
     ],
     "allowJs": true,
     "strict": true,
@@ -29,5 +30,8 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue"
-  ]
+  ],
+  "vueCompilerOptions": {
+    "plugins": ["@uni-helper/uni-app-types/volar-plugin"]
+  }
 }

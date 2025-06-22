@@ -76,6 +76,7 @@
     "@icebreakers/eslint-config": "^1.2.0",
     "@iconify/json": "^2.2.351",
     "@types/node": "^24.0.3",
+    "@uni-helper/uni-app-types": "1.0.0-alpha.6",
     "@vue/runtime-core": "^3.4.21",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.29.0",
