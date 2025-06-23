@@ -1,17 +1,27 @@
 import { defineConfig } from 'eslint/config'
 import pluginVue from 'eslint-plugin-vue'
-import pluginTailwind from 'eslint-plugin-tailwindcss'
+import pluginTailwindcss from 'eslint-plugin-tailwindcss'
+import tseslint from 'typescript-eslint';
 import eslintConfigPrettier from 'eslint-config-prettier/flat'
 import oxlint from 'eslint-plugin-oxlint'
+import vueParser from 'vue-eslint-parser'
 
 export default defineConfig([
   {
-    ignores: ['src/uni_modules/**'],
+    ignores: ['src/uni_modules/**', 'dist'],
   },
+  ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
-  ...pluginTailwind.configs['flat/recommended'],
+  ...pluginTailwindcss.configs['flat/recommended'],
   {
     files: ['*.vue', '**/*.vue'],
+    languageOptions: {
+      parser: vueParser,
+      parserOptions: {
+        parser: tseslint.parser,
+        sourceType: 'module',
+      },
+    },
     rules: {
       'vue/multi-word-component-names': 'off',
       'vue/no-useless-v-bind': [
@@ -21,11 +31,6 @@ export default defineConfig([
           ignoreStringEscape: false,
         },
       ],
-    },
-  },
-  {
-    files: ['*.vue', '**/*.vue'],
-    rules: {
       'tailwindcss/no-custom-classname': 'off',
     },
   },

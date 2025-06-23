@@ -3,7 +3,7 @@ import { getIconCollections, iconsPlugin } from '@egoist/tailwindcss-icons'
 import cssMacro from 'weapp-tailwindcss/css-macro'
 import { isMp } from './platform'
 
-export default <Config>{
+export default {
   content: ['./index.html', './src/**/*.{html,js,ts,jsx,tsx,vue}'],
   theme: {
     extend: {},
@@ -38,4 +38,4 @@ export default <Config>{
     preflight: !isMp,
     container: !isMp,
   },
-}
+} as Config
