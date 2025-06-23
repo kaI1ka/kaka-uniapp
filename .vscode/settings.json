@@ -21,5 +21,6 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "stylelint.validate": ["vue", "css", "scss"]
+  "stylelint.validate": ["vue", "css", "scss"],
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }

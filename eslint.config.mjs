@@ -5,6 +5,9 @@ import eslintConfigPrettier from 'eslint-config-prettier/flat'
 import oxlint from 'eslint-plugin-oxlint'
 
 export default defineConfig([
+  {
+    ignores: ['src/uni_modules/**'],
+  },
   ...pluginVue.configs['flat/recommended'],
   ...pluginTailwind.configs['flat/recommended'],
   {
@@ -28,7 +31,4 @@ export default defineConfig([
   },
   ...oxlint.buildFromOxlintConfigFile('./.oxlintrc.json'),
   eslintConfigPrettier,
-  {
-    ignores: ['src/node_modules/**'],
-  },
 ])
