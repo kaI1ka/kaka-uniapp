@@ -1,5 +1,5 @@
 {
-  "ignorePatterns": ["src/uni_modules/**", "dist"],
+  "ignorePatterns": ["src/uni_modules/**", "dist/"],
   "plugins": [
     "typescript",
     "unicorn",

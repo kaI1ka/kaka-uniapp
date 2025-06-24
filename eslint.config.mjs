@@ -1,14 +1,14 @@
 import { defineConfig } from 'eslint/config'
 import pluginVue from 'eslint-plugin-vue'
 import pluginTailwindcss from 'eslint-plugin-tailwindcss'
-import tseslint from 'typescript-eslint';
+import tseslint from 'typescript-eslint'
 import eslintConfigPrettier from 'eslint-config-prettier/flat'
 import oxlint from 'eslint-plugin-oxlint'
 import vueParser from 'vue-eslint-parser'
 
 export default defineConfig([
   {
-    ignores: ['src/uni_modules/**', 'dist'],
+    ignores: ['src/uni_modules/**', 'dist/'],
   },
   ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
