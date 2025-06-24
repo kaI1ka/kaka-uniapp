@@ -13,6 +13,7 @@ export default defineConfig([
   ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
   ...pluginTailwindcss.configs['flat/recommended'],
+  { rules: { '@typescript-eslint/no-explicit-any': 'off' } },
   {
     files: ['*.vue', '**/*.vue'],
     languageOptions: {
