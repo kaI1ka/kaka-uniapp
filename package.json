@@ -64,6 +64,7 @@
     "@dcloudio/uni-quickapp-webview": "3.0.0-4060620250520001",
     "@vue/shared": "3.4.21",
     "pinia": "2.2.4",
+    "pinia-plugin-persistedstate": "^4.4.0",
     "vue": "^3.4.21",
     "vue-i18n": "^9.14.4"
   },
