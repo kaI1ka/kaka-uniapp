@@ -1,10 +1,8 @@
-# uni-app-vite-vue3-tailwind-vscode-template
+# kaka-uniapp
 
-基于 `uni-app` 的 `vite` + `vue3` + `tailwindcss` 模板
+本快速开发模板基于 [`weapp-tailwindcss`](https://github.com/sonofmagic/weapp-tailwindcss) 作者写的 `uni-app` + `vite` + `vue3` + `tailwindcss` 模板
 
-假如你觉得好用，欢迎给我的 [`weapp-tailwindcss`](https://github.com/sonofmagic/weapp-tailwindcss) 点个 `Star` 吧。
-
-官网地址: <https://weapp-tw.icebreaker.top/>
+模板官网地址: <https://weapp-tw.icebreaker.top/>
 
 ## 特性
 
@@ -18,7 +16,9 @@
 
 - 🧬 [uni-app 条件编译样式](https://weapp-tw.icebreaker.top/docs/quick-start/uni-app-css-macro) - 帮助你在多端更灵活的使用 `TailwindCSS`
 
-- 🦾 [TypeScript](https://www.typescriptlang.org/) & [ESLint](https://eslint.org/) & [Stylelint](https://stylelint.io/) - 样式，类型，统一的校验与格式化规则，保证你的代码风格和质量
+- 🦾 [TypeScript](https://www.typescriptlang.org/) & [ESLint](https://eslint.org/) & [OXLint](https://oxc.rs/docs/guide/usage/linter.html) & [Stylelint](https://stylelint.io/) & [Prettier](https://prettier.io/) - 样式，类型，统一的校验与格式化规则，保证你的代码风格和质量
+
+- 💻 [uni-app](https://uniapp.dcloud.net.cn/) - 集成uniapp相关的vscode插件，超完善的代码提示和开发体验
 
 ## 快速开始
 
@@ -34,7 +34,7 @@
 
 ### 更换 Appid
 
-把 `src/manifest.json` 中的 `appid`, 更换为你自己的 `appid`, 比如 `uni-app` / `mp-weixin` 平台。
+把 `src/manifest.json` 中的 `appid`, 更换为你自己的 `appid`, 比如 `uni-app` / `mp-weixin` 平台
 
 ## 升级依赖
 
@@ -57,9 +57,9 @@
 
 你只需要把 `pnpm-lock.yaml` 删掉，然后把 `package.json` 中的 `packageManager` 字段去除或者换成你具体的包管理器版本，然后重新安装即可
 
-## eslint 代码校验
+## 代码校验
 
-本项目集成的是我自己封装的 `@icebreakers/eslint-config` 规则，你不喜欢完全可以更换，卸载掉它然后自行配置 `eslint`，把它变成你想要的样子
+我移除了本项目原先作者封装的 `eslint` 和 `stylelint` 库，改为手动配置，并且新增 `oxlint` 加快校验速度
 
 ### weapp-ide-cli
 
@@ -78,7 +78,7 @@
 
 详见：https://github.com/aniftyco/awesome-tailwindcss
 
-你可以在这里找到许多现成的UI，组件模板。
+你可以在这里找到许多现成的UI，组件模板
 
 ## 单位转换
 
@@ -87,5 +87,5 @@
 
 ## Tips
 
-- 升级 `uni-app` 依赖的方式为 `npx @dcloudio/uvm` 后，选择对应的 `Package Manager` 即可。而升级其他包的方式，可以使用 `pnpm up -Li`，这个是 `pnpm` 自带的方式。
+- 升级 `uni-app` 依赖的方式为 `npx @dcloudio/uvm` 后，选择对应的 `Package Manager` 即可。而升级其他包的方式，可以使用 `pnpm up -Li`，这个是 `pnpm` 自带的方式
 - 使用 `vscode` 记得安装官方插件 `eslint`,`stylelint`,`tailwindcss`, 已在 `.vscode/extensions.json` 中设置推荐
