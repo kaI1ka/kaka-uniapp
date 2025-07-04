@@ -1,7 +1,7 @@
 {
   "name": "kaka-uniapp",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.12.1",
+  "packageManager": "pnpm@10.12.4",
   "scripts": {
     "dev": "uni -p mp-weixin",
     "build": "npm run build:mp-weixin",
