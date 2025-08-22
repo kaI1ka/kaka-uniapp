@@ -95,12 +95,9 @@ importers:
       '@dcloudio/vite-plugin-uni':
         specifier: 3.0.0-4070520250711001
         version: 3.0.0-4070520250711001(postcss@8.5.6)(rollup@4.46.2)(vite@5.2.8(@types/node@24.3.0)(sass@1.90.0)(terser@5.43.1))(vue@3.5.18(typescript@5.9.2))
-      '@egoist/tailwindcss-icons':
-        specifier: ^1.9.0
-        version: 1.9.0(tailwindcss@3.4.17)
-      '@iconify/json':
-        specifier: ^2.2.376
-        version: 2.2.376
+      '@iconify/tailwind':
+        specifier: ^1.2.0
+        version: 1.2.0
       '@types/node':
         specifier: ^24.3.0
         version: 24.3.0
@@ -215,20 +212,6 @@ packages:
         tarball: https://registry.npmjs.org/@ampproject/remapping/-/remapping-2.3.0.tgz,
       }
     engines: { node: '>=6.0.0' }
-
-  '@antfu/install-pkg@1.1.0':
-    resolution:
-      {
-        integrity: sha512-MGQsmw10ZyI+EJo45CdSER4zEb+p31LpDAFp2Z3gkSd1yqVZGi0Ebx++YTEMonJy4oChEMLsxZ64j8FH6sSqtQ==,
-        tarball: https://registry.npmjs.org/@antfu/install-pkg/-/install-pkg-1.1.0.tgz,
-      }
-
-  '@antfu/utils@8.1.1':
-    resolution:
-      {
-        integrity: sha512-Mex9nXf9vR6AhcXmMrlz/HVgYYZpVGJ6YlPgwl7UnaFpnshXs6EK/oa5Gpf3CzENMjkvEx2tQtntGnb7UtSTOQ==,
-        tarball: https://registry.npmjs.org/@antfu/utils/-/utils-8.1.1.tgz,
-      }
 
   '@ast-core/escape@1.0.1':
     resolution:
@@ -1982,15 +1965,6 @@ packages:
         tarball: https://registry.npmjs.org/@dual-bundle/import-meta-resolve/-/import-meta-resolve-4.1.0.tgz,
       }
 
-  '@egoist/tailwindcss-icons@1.9.0':
-    resolution:
-      {
-        integrity: sha512-xWA9cUy6hzlK7Y6TaoRIcwmilSXiTJ8rbXcEdf9uht7yzDgw/yIgF4rThIQMrpD2Y2v4od51+r2y6Z7GStanDQ==,
-        tarball: https://registry.npmjs.org/@egoist/tailwindcss-icons/-/tailwindcss-icons-1.9.0.tgz,
-      }
-    peerDependencies:
-      tailwindcss: '*'
-
   '@esbuild/aix-ppc64@0.20.2':
     resolution:
       {
@@ -2335,11 +2309,11 @@ packages:
       }
     engines: { node: '>=18.18' }
 
-  '@iconify/json@2.2.376':
+  '@iconify/tailwind@1.2.0':
     resolution:
       {
-        integrity: sha512-2jQ+5zPV7Lva9iuFOvMkcq5XQyRx7xvLuodpDI+yjAxOnB2gpWa4caFz53tyPgCWU50Zd9/JSNZaCNYSTniSrg==,
-        tarball: https://registry.npmjs.org/@iconify/json/-/json-2.2.376.tgz,
+        integrity: sha512-KgpIHWOTcRYw1XcoUqyNSrmYyfLLqZYu3AmP8zdfLk0F5TqRO8YerhlvlQmGfn7rJXgPeZN569xPAJnJ53zZxA==,
+        tarball: https://registry.npmjs.org/@iconify/tailwind/-/tailwind-1.2.0.tgz,
       }
 
   '@iconify/types@2.0.0':
@@ -2347,13 +2321,6 @@ packages:
       {
         integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==,
         tarball: https://registry.npmjs.org/@iconify/types/-/types-2.0.0.tgz,
-      }
-
-  '@iconify/utils@2.3.0':
-    resolution:
-      {
-        integrity: sha512-GmQ78prtwYW6EtzXRU1rY+KwOKfz32PD7iJh6Iyqw68GiKuoZ2A6pRtzWONz5VQJbp50mEjXh/7NkumtrAgRKA==,
-        tarball: https://registry.npmjs.org/@iconify/utils/-/utils-2.3.0.tgz,
       }
 
   '@intlify/core-base@9.1.9':
@@ -6074,14 +6041,6 @@ packages:
       }
     engines: { node: '>=18' }
 
-  globals@15.15.0:
-    resolution:
-      {
-        integrity: sha512-7ACyT3wmyp3I61S4fG682L0VA2RGD9otkqGJIwNUMF1SWUombIIk+af1unuDYgMm082aHYwD+mzJvv9Iu8dsgg==,
-        tarball: https://registry.npmjs.org/globals/-/globals-15.15.0.tgz,
-      }
-    engines: { node: '>=18' }
-
   globby@11.1.0:
     resolution:
       {
@@ -7087,13 +7046,6 @@ packages:
         tarball: https://registry.npmjs.org/known-css-properties/-/known-css-properties-0.37.0.tgz,
       }
 
-  kolorist@1.8.0:
-    resolution:
-      {
-        integrity: sha512-Y+60/zizpJ3HRH8DCss+q95yr6145JXZo46OTpFvDZWLfRCE4qChOyk1b26nMaNpfHHgxagk9dXT5OP0Tfe+dQ==,
-        tarball: https://registry.npmjs.org/kolorist/-/kolorist-1.8.0.tgz,
-      }
-
   lcid@3.1.1:
     resolution:
       {
@@ -7921,13 +7873,6 @@ packages:
         tarball: https://registry.npmjs.org/package-json-from-dist/-/package-json-from-dist-1.0.1.tgz,
       }
 
-  package-manager-detector@1.3.0:
-    resolution:
-      {
-        integrity: sha512-ZsEbbZORsyHuO00lY1kV3/t72yp6Ysay6Pd17ZAlNGuGwmWDLCJxFpRs0IzfXfj1o4icJOkUEioexFHzyPurSQ==,
-        tarball: https://registry.npmjs.org/package-manager-detector/-/package-manager-detector-1.3.0.tgz,
-      }
-
   pako@1.0.11:
     resolution:
       {
@@ -8070,13 +8015,6 @@ packages:
         tarball: https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz,
       }
     engines: { node: '>=8' }
-
-  pathe@1.1.2:
-    resolution:
-      {
-        integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==,
-        tarball: https://registry.npmjs.org/pathe/-/pathe-1.1.2.tgz,
-      }
 
   pathe@2.0.3:
     resolution:
@@ -9793,13 +9731,6 @@ packages:
         tarball: https://registry.npmjs.org/tinyexec/-/tinyexec-0.3.2.tgz,
       }
 
-  tinyexec@1.0.1:
-    resolution:
-      {
-        integrity: sha512-5uC6DDlmeqiOwCPmK9jMSdOuZTh8bU39Ys6yidB+UTt5hfZUPGAypSgFRiEp+jbi9qH40BLDvy85jIU88wKSqw==,
-        tarball: https://registry.npmjs.org/tinyexec/-/tinyexec-1.0.1.tgz,
-      }
-
   tinyglobby@0.2.14:
     resolution:
       {
@@ -10610,13 +10541,6 @@ snapshots:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.12
       '@jridgewell/trace-mapping': 0.3.29
-
-  '@antfu/install-pkg@1.1.0':
-    dependencies:
-      package-manager-detector: 1.3.0
-      tinyexec: 1.0.1
-
-  '@antfu/utils@8.1.1': {}
 
   '@ast-core/escape@1.0.1': {}
 
@@ -12290,13 +12214,6 @@ snapshots:
 
   '@dual-bundle/import-meta-resolve@4.1.0': {}
 
-  '@egoist/tailwindcss-icons@1.9.0(tailwindcss@3.4.17)':
-    dependencies:
-      '@iconify/utils': 2.3.0
-      tailwindcss: 3.4.17
-    transitivePeerDependencies:
-      - supports-color
-
   '@esbuild/aix-ppc64@0.20.2':
     optional: true
 
@@ -12423,25 +12340,11 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@iconify/json@2.2.376':
+  '@iconify/tailwind@1.2.0':
     dependencies:
       '@iconify/types': 2.0.0
-      pathe: 1.1.2
 
   '@iconify/types@2.0.0': {}
-
-  '@iconify/utils@2.3.0':
-    dependencies:
-      '@antfu/install-pkg': 1.1.0
-      '@antfu/utils': 8.1.1
-      '@iconify/types': 2.0.0
-      debug: 4.4.1
-      globals: 15.15.0
-      kolorist: 1.8.0
-      local-pkg: 1.1.1
-      mlly: 1.7.4
-    transitivePeerDependencies:
-      - supports-color
 
   '@intlify/core-base@9.1.9':
     dependencies:
@@ -14673,8 +14576,6 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@15.15.0: {}
-
   globby@11.1.0:
     dependencies:
       array-union: 2.1.0
@@ -15384,8 +15285,6 @@ snapshots:
 
   known-css-properties@0.37.0: {}
 
-  kolorist@1.8.0: {}
-
   lcid@3.1.1:
     dependencies:
       invert-kv: 3.0.1
@@ -15793,8 +15692,6 @@ snapshots:
 
   package-json-from-dist@1.0.1: {}
 
-  package-manager-detector@1.3.0: {}
-
   pako@1.0.11: {}
 
   parent-module@1.0.1:
@@ -15853,8 +15750,6 @@ snapshots:
   path-to-regexp@0.1.12: {}
 
   path-type@4.0.0: {}
-
-  pathe@1.1.2: {}
 
   pathe@2.0.3: {}
 
@@ -16890,8 +16785,6 @@ snapshots:
   tinycolor2@1.6.0: {}
 
   tinyexec@0.3.2: {}
-
-  tinyexec@1.0.1: {}
 
   tinyglobby@0.2.14:
     dependencies:
