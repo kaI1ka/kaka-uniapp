@@ -1,14 +1,35 @@
 {
-  "eslint.enable": true,
-  "oxc.enable": true,
-  "prettier.enable": true,
-  "editor.formatOnSave": true,
+  // 关闭默认格式化
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
   // 自动修复
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.fixAll.oxc": "explicit",
     "source.organizeImports": "never"
   },
+  // eslint校验所有支持的文件类型
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml",
+    "xml",
+    "gql",
+    "graphql",
+    "astro",
+    "css",
+    "less",
+    "scss",
+    "pcss",
+    "postcss"
+  ],
   // https://github.com/tailwindlabs/tailwindcss/discussions/5258
   "css.customData": [".vscode/tailwind.json"],
   "tailwindCSS.experimental.classRegex": [
@@ -18,9 +39,5 @@
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-  "stylelint.validate": ["vue", "css", "scss"],
   "typescript.tsdk": "node_modules\\typescript\\lib"
 }

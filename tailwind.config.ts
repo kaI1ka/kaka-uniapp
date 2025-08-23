@@ -12,7 +12,7 @@ export default {
   plugins: [
     cssMacro({
       variantsMap: {
-        wx: 'MP-WEIXIN',
+        'wx': 'MP-WEIXIN',
         '-wx': {
           value: 'MP-WEIXIN',
           negative: true,

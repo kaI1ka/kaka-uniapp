@@ -39,12 +39,12 @@
     "upload:dev": "weapp upload -p dist/dev/mp-weixin -v 1.0.0 -d \"dev version\"",
     "upload:build": "weapp upload -p dist/build/mp-weixin -v 1.0.0 -d \"release version\"",
     "postinstall": "weapp-tw patch",
-    "lint": "oxlint && eslint",
-    "lint:fix": "oxlint --fix && eslint --fix",
-    "format": "prettier --write . --ignore-unknown",
     "up:pkg": "pnpm up -rLi \"!@dcloudio/*\"",
     "up:uniapp": "pnpx @dcloudio/uvm@latest",
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "lint:view": "pnpx @eslint/config-inspector@latest"
   },
   "dependencies": {
     "@alova/adapter-uniapp": "^2.0.14",
@@ -73,6 +73,7 @@
     "vue-i18n": "^9.1.9"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^5.2.1",
     "@dcloudio/types": "^3.4.8",
     "@dcloudio/uni-automator": "3.0.0-4070520250711001",
     "@dcloudio/uni-cli-shared": "3.0.0-4070520250711001",
@@ -81,18 +82,11 @@
     "@iconify/tailwind": "^1.2.0",
     "@types/node": "^24.3.0",
     "@uni-helper/uni-app-types": "1.0.0-alpha.6",
-    "@vue/eslint-config-prettier": "^10.2.0",
-    "@vue/eslint-config-typescript": "^14.6.0",
     "@vue/runtime-core": "^3.4.21",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.30.1",
-    "eslint-plugin-oxlint": "^1.12.0",
-    "eslint-plugin-tailwindcss": "^3.18.0",
-    "eslint-plugin-vue": "^10.3.0",
     "husky": "^9.1.7",
-    "jiti": "^2.5.1",
     "lint-staged": "^16.1.5",
-    "oxlint": "^1.12.0",
     "postcss": "^8.5.6",
     "prettier": "3.6.2",
     "sass": "^1.89.2",
@@ -114,9 +108,6 @@
     ]
   },
   "lint-staged": {
-    "*": [
-      "oxlint && eslint",
-      "prettier --write . --ignore-unknown"
-    ]
+    "*": "eslint"
   }
 }

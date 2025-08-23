@@ -1,11 +1,12 @@
+import type { uniappRequestAdapter } from '@alova/adapter-uniapp'
+import type vueHook from 'alova/vue'
+import AdapterUniapp from '@alova/adapter-uniapp'
 import { createAlova } from 'alova'
-import AdapterUniapp, { uniappRequestAdapter } from '@alova/adapter-uniapp'
 import { createServerTokenAuthentication } from 'alova/client'
-import vueHook from 'alova/vue'
 import { refreshToken } from './methods/auth'
 
-const { onAuthRequired, onResponseRefreshToken } =
-  createServerTokenAuthentication<typeof vueHook, typeof uniappRequestAdapter>({
+const { onAuthRequired, onResponseRefreshToken }
+  = createServerTokenAuthentication<typeof vueHook, typeof uniappRequestAdapter>({
     refreshTokenOnSuccess: {
       // 响应时触发，可获取到response和method，并返回boolean表示token是否过期
       // 当服务端返回401时，表示token过期
@@ -18,7 +19,8 @@ const { onAuthRequired, onResponseRefreshToken } =
           const { token, refresh_token } = await refreshToken()
           uni.setStorageSync('token', token)
           uni.setStorageSync('refresh_token', refresh_token)
-        } catch (error) {
+        }
+        catch (error) {
           // 处理token刷新失败，比如跳转回登录页或者其他操作
           uni.navigateTo({
             url: '/pages/index/index',
@@ -57,7 +59,8 @@ export const baseAlova = createAlova({
       if ('header' in response) {
         const { data } = response as UniNamespace.RequestSuccessCallbackResult
         return data
-      } else {
+      }
+      else {
         return response
       }
     },
