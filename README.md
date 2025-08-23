@@ -16,7 +16,7 @@
 
 - 🧬 [uni-app 条件编译样式](https://weapp-tw.icebreaker.top/docs/quick-start/uni-app-css-macro) - 帮助你在多端更灵活的使用 `TailwindCSS`
 
-- 🦾 [TypeScript](https://www.typescriptlang.org/) & [ESLint](https://eslint.org/) & [OXLint](https://oxc.rs/docs/guide/usage/linter.html) & [Stylelint](https://stylelint.io/) & [Prettier](https://prettier.io/) - 样式，类型，统一的校验与格式化规则，保证你的代码风格和质量
+- 🦾 [TypeScript](https://www.typescriptlang.org/) & [ESLint](https://eslint.org/)
 
 - 💻 [uni-app](https://uniapp.dcloud.net.cn/) - 集成uniapp相关的vscode插件，超完善的代码提示和开发体验
 
@@ -56,10 +56,6 @@
 本项目默认使用 `pnpm@10` 进行管理，当然你也可以切换到其他包管理器，比如 `yarn`, `npm`
 
 你只需要把 `pnpm-lock.yaml` 删掉，然后把 `package.json` 中的 `packageManager` 字段去除或者换成你具体的包管理器版本，然后重新安装即可
-
-## 代码校验
-
-我移除了本项目原先作者封装的 `eslint` 和 `stylelint` 库，改为手动配置，并且新增 `oxlint` 加快校验速度
 
 ### weapp-ide-cli
 
