@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-import { addDynamicIconSelectors } from '@iconify/tailwind'
+import { getIconCollections, iconsPlugin } from '@egoist/tailwindcss-icons'
 import cssMacro from 'weapp-tailwindcss/css-macro'
 import { isMp } from './platform'
 
@@ -27,7 +27,11 @@ export default {
         // }
       },
     }),
-    addDynamicIconSelectors(),
+    iconsPlugin({
+      // 在这里可以选择你要使用的 icon, 更多详见:
+      // https://icon-sets.iconify.design/
+      collections: getIconCollections(['tdesign']),
+    }),
   ],
   corePlugins: {
     // 小程序去使用 h5 的 preflight 和响应式 container 没有意义

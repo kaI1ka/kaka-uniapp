@@ -13,4 +13,8 @@ export default antfu({
       'no-console': 'off',
     },
   },
-}, tailwindcss.configs['flat/recommended'])
+}, [...tailwindcss.configs['flat/recommended'], {
+  rules: {
+    'tailwindcss/no-custom-classname': 'off',
+  },
+}])
