@@ -3,7 +3,6 @@ import type vueHook from 'alova/vue'
 import AdapterUniapp from '@alova/adapter-uniapp'
 import { createAlova } from 'alova'
 import { createServerTokenAuthentication } from 'alova/client'
-import { refreshToken } from './methods/auth'
 
 const { onAuthRequired, onResponseRefreshToken }
   = createServerTokenAuthentication<typeof vueHook, typeof uniappRequestAdapter>({
@@ -16,40 +15,34 @@ const { onAuthRequired, onResponseRefreshToken }
       // 当token过期时触发，在此函数中触发刷新token
       handler: async () => {
         try {
-          const { token, refresh_token } = await refreshToken()
-          uni.setStorageSync('token', token)
-          uni.setStorageSync('refresh_token', refresh_token)
+          // 在这里调用刷新token
         }
         catch (error) {
           // 处理token刷新失败，比如跳转回登录页或者其他操作
           uni.navigateTo({
-            url: '/pages/index/index',
+            url: '/pages/login/login',
           })
           // 并抛出错误
           throw error
         }
       },
     },
-    // 登录保存token
-    login(response, _method) {
-      const { data } = response as UniNamespace.RequestSuccessCallbackResult
-      const { token, refresh_token } = data as Record<string, any>
-      uni.setStorageSync('token', token)
-      uni.setStorageSync('refresh_token', refresh_token)
+    // 登录拦截
+    login(_response, _method) {
+      // 可以在这里保存token
     },
-    // 请求前加上token
-    assignToken: (method) => {
-      method.config.headers.Authorization = uni.getStorageSync('token')
+    // 用于附加token
+    assignToken: (_method) => {
+      // method.config.headers.Authorization = xxx
     },
     // 退出登录删除数据
     logout(_response, _method) {
-      uni.removeStorageSync('token')
-      uni.removeStorageSync('refresh_token')
+      // 可以在这里删除token
     },
   })
 
 export const baseAlova = createAlova({
-  baseURL: import.meta.env.VITE_GLOB_API_URL,
+  baseURL: import.meta.env.VITE_API_URL,
   ...AdapterUniapp(),
   beforeRequest: onAuthRequired((_method) => {
     // 请求拦截器

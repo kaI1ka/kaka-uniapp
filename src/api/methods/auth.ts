@@ -1,7 +1,7 @@
 import { baseAlova } from '..'
 
 export function refreshToken() {
-  const method = baseAlova.Get<{ token: string, refresh_token: string }>(
+  const method = baseAlova.Get(
     '/refresh_token',
   )
   method.meta = { authRole: 'refreshToken' }
@@ -9,7 +9,7 @@ export function refreshToken() {
 }
 
 export function login() {
-  const method = baseAlova.Post<{ token: string, refresh_token: string }>(
+  const method = baseAlova.Post(
     '/login',
   )
   method.meta = {
