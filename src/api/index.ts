@@ -9,11 +9,11 @@ const { onAuthRequired, onResponseRefreshToken }
     refreshTokenOnSuccess: {
       // 响应时触发，可获取到response和method，并返回boolean表示token是否过期
       // 当服务端返回401时，表示token过期
-      isExpired: (response) => {
+      isExpired(response) {
         return response.statusCode === 401
       },
       // 当token过期时触发，在此函数中触发刷新token
-      handler: async () => {
+      async handler() {
         try {
           // 在这里调用刷新token
         }
@@ -28,16 +28,20 @@ const { onAuthRequired, onResponseRefreshToken }
       },
     },
     // 登录拦截
-    login(_response, _method) {
-      // 可以在这里保存token
+    login: {
+      handler(_response, _method) {
+        // 可以在这里保存token
+      },
     },
     // 用于附加token
     assignToken: (_method) => {
       // method.config.headers.Authorization = xxx
     },
-    // 退出登录删除数据
-    logout(_response, _method) {
-      // 可以在这里删除token
+    // 登出拦截
+    logout: {
+      handler(_response, _method) {
+        // 可以在这里删除token
+      },
     },
   })
 
@@ -66,3 +70,10 @@ export const baseAlova = createAlova({
     },
   }),
 })
+
+/** 基础响应类型 */
+export interface BaseResponse<T = any> {
+  code: number
+  message: string
+  data: T
+}

@@ -1,7 +1,8 @@
+import type { BaseResponse } from '..'
 import { baseAlova } from '..'
 
 export function refreshToken() {
-  const method = baseAlova.Get(
+  const method = baseAlova.Get<BaseResponse>(
     '/refresh_token',
   )
   method.meta = { authRole: 'refreshToken' }
@@ -9,7 +10,7 @@ export function refreshToken() {
 }
 
 export function login() {
-  const method = baseAlova.Post(
+  const method = baseAlova.Post<BaseResponse>(
     '/login',
   )
   method.meta = {
@@ -19,7 +20,7 @@ export function login() {
 }
 
 export function logout() {
-  const method = baseAlova.Post('/logout')
+  const method = baseAlova.Post<BaseResponse>('/logout')
   method.meta = {
     authRole: 'logout',
   }

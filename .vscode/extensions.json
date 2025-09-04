@@ -2,8 +2,6 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "bradlc.vscode-tailwindcss",
-    "vue.volar",
-    "uni-helper.uni-app-snippets-vscode",
-    "uni-helper.uni-app-schemas-vscode"
+    "vue.volar"
   ]
 }

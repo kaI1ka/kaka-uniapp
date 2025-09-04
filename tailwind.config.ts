@@ -30,7 +30,7 @@ export default {
     iconsPlugin({
       // 在这里可以选择你要使用的 icon, 更多详见:
       // https://icon-sets.iconify.design/
-      collections: getIconCollections(['tdesign']),
+      collections: getIconCollections([]),
     }),
   ],
   corePlugins: {

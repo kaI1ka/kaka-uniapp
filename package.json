@@ -42,8 +42,8 @@
     "up:pkg": "pnpm up -rLi \"!@dcloudio/*\"",
     "up:uniapp": "pnpx @dcloudio/uvm@latest",
     "prepare": "husky",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "lint:view": "pnpx @eslint/config-inspector@latest"
   },
   "dependencies": {
@@ -82,7 +82,9 @@
     "@egoist/tailwindcss-icons": "^1.9.0",
     "@iconify/json": "^2.2.378",
     "@types/node": "^24.3.0",
+    "@uni-helper/eslint-config": "^0.5.0",
     "@uni-helper/uni-app-types": "1.0.0-alpha.6",
+    "@uni-helper/vite-plugin-uni-manifest": "^0.2.8",
     "@vue/runtime-core": "^3.4.21",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.34.0",

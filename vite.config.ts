@@ -1,4 +1,5 @@
 import uni from '@dcloudio/vite-plugin-uni'
+import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
 import AutoImport from 'unplugin-auto-import/vite'
 import { defineConfig } from 'vite'
 import { UnifiedViteWeappTailwindcssPlugin } from 'weapp-tailwindcss/vite'
@@ -9,6 +10,7 @@ import postcssPlugins from './postcss.config'
 export default defineConfig({
   // uvtw 一定要放在 uni 后面
   plugins: [
+    UniManifest(),
     uni(),
     UnifiedViteWeappTailwindcssPlugin({
       rem2rpx: true,

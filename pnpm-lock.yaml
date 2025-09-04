@@ -108,9 +108,15 @@ importers:
       '@types/node':
         specifier: ^24.3.0
         version: 24.3.0
+      '@uni-helper/eslint-config':
+        specifier: ^0.5.0
+        version: 0.5.0(@antfu/eslint-config@5.2.1(@vue/compiler-sfc@3.5.20)(eslint@9.34.0(jiti@2.5.1))(typescript@5.9.2))(eslint@9.34.0(jiti@2.5.1))
       '@uni-helper/uni-app-types':
         specifier: 1.0.0-alpha.6
         version: 1.0.0-alpha.6(typescript@5.9.2)(vue@3.5.20(typescript@5.9.2))
+      '@uni-helper/vite-plugin-uni-manifest':
+        specifier: ^0.2.8
+        version: 0.2.8(vite@5.2.8(@types/node@24.3.0)(sass@1.91.0)(terser@5.43.1))
       '@vue/runtime-core':
         specifier: ^3.4.21
         version: 3.5.20
@@ -2118,12 +2124,23 @@ packages:
     resolution: {integrity: sha512-+GeGMebMCy0elMNg67LRNoVnUFPIm37iu5CmHESVx56/9Jsfdpsvbv605DQ81Pi/x11IdKUsS5nzgTYbCQU9fg==, tarball: https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.41.0.tgz}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@uni-helper/eslint-config@0.5.0':
+    resolution: {integrity: sha512-jU/VT078aZQcwjC4ceuWWR5yh4mJ0PzW5MSrOgLi1MSbBKQe5YTAlvphXAUMYpSHqg7iwCmaWNamy3tv4ZZicw==, tarball: https://registry.npmjs.org/@uni-helper/eslint-config/-/eslint-config-0.5.0.tgz}
+    peerDependencies:
+      '@antfu/eslint-config': ^5.0.0
+      eslint: ^9.10.0
+
   '@uni-helper/uni-app-types@1.0.0-alpha.6':
     resolution: {integrity: sha512-t9AKDYBmDaz4IW0fgtBt25ubEzf7kyUeMlHaBaG5nyNGd6pVuDpYkABhsnNPDiZcaHAoN6SbX1SQQx5axDOWbA==, tarball: https://registry.npmjs.org/@uni-helper/uni-app-types/-/uni-app-types-1.0.0-alpha.6.tgz}
     engines: {node: '>=14.18'}
     peerDependencies:
       typescript: ^5.0.0
       vue: ^3.0.0
+
+  '@uni-helper/vite-plugin-uni-manifest@0.2.8':
+    resolution: {integrity: sha512-6QtUcCTkvpR5GAPUxyKlEtm+KYxOk1RSVfdrxlWYW2q7Iws0D7UeNirA4GMuc/SaayEjURlU7cUrS7NceoPCfQ==, tarball: https://registry.npmjs.org/@uni-helper/vite-plugin-uni-manifest/-/vite-plugin-uni-manifest-0.2.8.tgz}
+    peerDependencies:
+      vite: ^4.0.0 || ^5.0.0 || ^6.0.0
 
   '@vitejs/plugin-legacy@5.3.2':
     resolution: {integrity: sha512-8moCOrIMaZ/Rjln0Q6GsH6s8fAt1JOI3k8nmfX4tXUxE5KAExVctSyOBk+A25GClsdSWqIk2yaUthH3KJ2X4tg==, tarball: https://registry.npmjs.org/@vitejs/plugin-legacy/-/plugin-legacy-5.3.2.tgz}
@@ -8574,10 +8591,27 @@ snapshots:
       '@typescript-eslint/types': 8.41.0
       eslint-visitor-keys: 4.2.1
 
+  '@uni-helper/eslint-config@0.5.0(@antfu/eslint-config@5.2.1(@vue/compiler-sfc@3.5.20)(eslint@9.34.0(jiti@2.5.1))(typescript@5.9.2))(eslint@9.34.0(jiti@2.5.1))':
+    dependencies:
+      '@antfu/eslint-config': 5.2.1(@vue/compiler-sfc@3.5.20)(eslint@9.34.0(jiti@2.5.1))(typescript@5.9.2)
+      '@eslint/eslintrc': 3.3.1
+      eslint: 9.34.0(jiti@2.5.1)
+      eslint-flat-config-utils: 2.1.1
+      local-pkg: 1.1.2
+    transitivePeerDependencies:
+      - supports-color
+
   '@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@5.9.2)(vue@3.5.20(typescript@5.9.2))':
     dependencies:
       typescript: 5.9.2
       vue: 3.5.20(typescript@5.9.2)
+
+  '@uni-helper/vite-plugin-uni-manifest@0.2.8(vite@5.2.8(@types/node@24.3.0)(sass@1.91.0)(terser@5.43.1))':
+    dependencies:
+      c12: 2.0.4
+      vite: 5.2.8(@types/node@24.3.0)(sass@1.91.0)(terser@5.43.1)
+    transitivePeerDependencies:
+      - magicast
 
   '@vitejs/plugin-legacy@5.3.2(terser@5.43.1)(vite@5.2.8(@types/node@24.3.0)(sass@1.91.0)(terser@5.43.1))':
     dependencies:
