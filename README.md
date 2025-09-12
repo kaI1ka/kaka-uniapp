@@ -1,8 +1,8 @@
 # kaka-uniapp
 
-本快速开发模板基于 [`weapp-tailwindcss`](https://github.com/sonofmagic/weapp-tailwindcss) 作者写的 `uni-app` + `vite` + `vue3` + `tailwindcss` 模板
+本快速开发模板基于 [`weapp-tailwindcss`](https://github.com/sonofmagic/weapp-tailwindcss)
 
-原模板官网地址: <https://weapp-tw.icebreaker.top/>
+weapp-tailwindcss 官网地址: <https://weapp-tw.icebreaker.top/>
 
 ## 特性
 
@@ -18,11 +18,11 @@
 
 - 🦾 [TypeScript](https://www.typescriptlang.org/) & [ESLint](https://eslint.org/)
 
-- 💻 [uni-app](https://uniapp.dcloud.net.cn/) - 集成uniapp相关的vscode插件，超完善的代码提示和开发体验
+- 💻 [Alova](https://alova.js.org/) - 极致高效的请求工具集，涵盖多种请求策略
 
 ## 快速开始
 
-> 请使用 `Node >=20(LTS)` 运行此项目!
+> 请使用 `Node >=22(LTS)` 运行此项目!
 >
 > 另外谨慎升级 `package.json` 中锁定的 `pinia`/`vue`/`@vue/*` 相关包的版本，新版本可能 `uni-app` 没有兼容，造成一些奇怪的 bug
 
