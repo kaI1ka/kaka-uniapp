@@ -1,5 +1,6 @@
 import uni from '@dcloudio/vite-plugin-uni'
 import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
+import UniKuRoot from '@uni-ku/root'
 import AutoImport from 'unplugin-auto-import/vite'
 import { defineConfig } from 'vite'
 import { UnifiedViteWeappTailwindcssPlugin } from 'weapp-tailwindcss/vite'
@@ -10,6 +11,7 @@ import postcssPlugins from './postcss.config'
 export default defineConfig({
   // uvtw 一定要放在 uni 后面
   plugins: [
+    UniKuRoot(),
     UniManifest(),
     uni(),
     UnifiedViteWeappTailwindcssPlugin({
@@ -28,12 +30,6 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: postcssPlugins,
-    },
-    // https://vitejs.dev/config/shared-options.html#css-preprocessoroptions
-    preprocessorOptions: {
-      scss: {
-        silenceDeprecations: ['legacy-js-api'],
-      },
     },
   },
 })

@@ -41,7 +41,7 @@ weapp-tailwindcss 官网地址: <https://weapp-tw.icebreaker.top/>
 - `pnpm up:pkg` 升级除了 `uni-app` 相关的其他依赖
 - `pnpm up:uniapp` 升级 `uni-app` 相关的依赖
 
-推荐先使用 `pnpm up:pkg` 升级, 再使用 `pnpm up:uniapp` 进行升级，因为 `pnpm up:uniapp` 很有可能会进行版本的降级已达到和 `uni-app` 版本匹配的效果
+推荐先使用 `pnpm up:pkg` 升级, 再使用 `pnpm up:uniapp` 进行升级，因为 `pnpm up:uniapp` 很有可能会进行版本的降级以达到和 `uni-app` 版本匹配的效果
 
 ## 切换到国内镜像源
 
@@ -84,4 +84,4 @@ weapp-tailwindcss 官网地址: <https://weapp-tw.icebreaker.top/>
 ## Tips
 
 - 升级 `uni-app` 依赖的方式为 `npx @dcloudio/uvm` 后，选择对应的 `Package Manager` 即可。而升级其他包的方式，可以使用 `pnpm up -Li`，这个是 `pnpm` 自带的方式
-- 使用 `vscode` 记得安装官方插件 `eslint`,`tailwindcss`等, 已在 `.vscode/extensions.json` 中设置推荐
+- 使用 `vscode` 记得安装官方插件 `eslint`，`tailwindcss`，`volar`等, 已在 `.vscode/extensions.json` 中设置推荐

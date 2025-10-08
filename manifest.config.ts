@@ -33,6 +33,8 @@ export default defineManifestConfig({
       urlCheck: false,
     },
     usingComponents: true,
+    lazyCodeLoading: 'requiredComponents',
+    darkmode: false,
   },
   'mp-alipay': {
     usingComponents: true,
