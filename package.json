@@ -1,6 +1,6 @@
 {
   "name": "kaka-uniapp",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "packageManager": "pnpm@10.20.0",
   "scripts": {
     "dev": "uni -p mp-weixin",

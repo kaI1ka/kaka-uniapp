@@ -2,9 +2,9 @@ import { defineManifestConfig } from '@uni-helper/vite-plugin-uni-manifest'
 
 export default defineManifestConfig({
   'name': 'kaka-uniapp',
-  'appid': '__UNI__2B8B0FB',
+  'appid': '__UNI__C27D3D9',
   'description': '',
-  'versionName': '0.0.1',
+  'versionName': '1.0.0',
   'versionCode': '100',
   'transformPx': false,
   'app-plus': {

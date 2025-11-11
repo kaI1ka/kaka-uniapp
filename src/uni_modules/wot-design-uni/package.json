@@ -1,13 +1,13 @@
 {
   "id": "wot-design-uni",
   "name": "wot-design-uni",
-  "displayName": "wot-design-uni 基于vue3+Typescript的高颜值组件库",
+  "displayName": "wot-ui基于vue3+Typescript的高颜值组件库2k stars",
   "version": "1.13.0",
   "license": "MIT",
   "description": "一个基于Vue3+TS开发的uni-app组件库，提供70+高质量组件，支持暗黑模式、国际化和自定义主题。",
   "keywords": [
     "wot-design-uni",
-    "国际化",
+    "wot-ui",
     "组件库",
     "vue3",
     "暗黑模式"
