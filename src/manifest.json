@@ -24,6 +24,12 @@
       "sdkConfigs": {}
     }
   },
+  "app-harmony": {
+    "distribute": {}
+  },
+  "mp-harmony": {
+    "distribute": {}
+  },
   "quickapp": {},
   "mp-weixin": {
     "appid": "",

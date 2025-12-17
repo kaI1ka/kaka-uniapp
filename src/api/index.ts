@@ -17,10 +17,31 @@ export const baseAlova = createAlova({
   responded: {
     onSuccess(response) {
       console.log('响应信息', response)
+      // @ts-expect-error uniapp基本响应类型
+      if (response.header) {
+        const res = (response as UniNamespace.RequestSuccessCallbackResult).data as BaseResponse<any>
+        return res
+      }
+      // @ts-expect-error uniapp上传文件响应类型
+      else if (response.data) {
+        const res = (response as UniNamespace.UploadFileSuccessCallbackResult).data
+        try {
+          const uploadRes = JSON.parse(res) as BaseResponse<any>
+          return uploadRes
+        }
+        catch (error: any) {
+          throw new Error(error)
+        }
+      }
+      else {
+        const downloadRes = response as UniNamespace.DownloadSuccessData
+        return downloadRes
+      }
     },
     onError(error) {
       console.log('请求失败', error)
       showToast('请求失败')
+      throw new Error(error)
     },
     onComplete(method) {
       if (method.meta?.loading) {
