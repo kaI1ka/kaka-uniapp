@@ -124,10 +124,20 @@ export default {
   tableCol: {
     indexLabel: 'index'
   },
+  tour: {
+    prev: 'Previous',
+    next: 'Next',
+    finish: 'Finish',
+    skip: 'Skip'
+  },
   signature: {
     confirmText: 'OK',
     clearText: 'Clear',
     revokeText: 'Undo',
     restoreText: 'Restore'
+  },
+  slideVerify: {
+    text: 'Slide right to verify',
+    successText: 'Verification passed'
   }
 }

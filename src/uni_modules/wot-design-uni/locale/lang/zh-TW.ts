@@ -66,10 +66,20 @@ export default {
   tableCol: {
     indexLabel: '序號'
   },
+  tour: {
+    prev: '上一步',
+    next: '下一步',
+    finish: '完成',
+    skip: '跳過'
+  },
   signature: {
     confirmText: '確認',
     clearText: '清空',
     revokeText: '撤銷',
     restoreText: '恢復'
+  },
+  slideVerify: {
+    text: '向右滑動驗證',
+    successText: '驗證通過'
   }
 }

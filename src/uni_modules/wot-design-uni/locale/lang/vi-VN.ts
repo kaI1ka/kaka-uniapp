@@ -77,10 +77,20 @@ export default {
   tableCol: {
     indexLabel: 'Số sê-ri'
   },
+  tour: {
+    prev: 'Trước',
+    next: 'Tiếp',
+    finish: 'Hoàn thành',
+    skip: 'Bỏ qua'
+  },
   signature: {
     confirmText: 'Xác nhận',
     clearText: 'Xóa',
     revokeText: 'Hoàn tác',
     restoreText: 'Khôi phục'
+  },
+  slideVerify: {
+    text: 'Vuốt sang phải để xác minh',
+    successText: 'Xác minh thành công'
   }
 }

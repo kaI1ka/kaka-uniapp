@@ -1,13 +1,13 @@
 {
   "id": "wot-design-uni",
   "name": "wot-design-uni",
-  "displayName": "wot-ui基于vue3+Typescript的高颜值组件库2k stars",
-  "version": "1.13.0",
+  "displayName": "wot-design-uni 基于vue3+Typescript的高颜值组件库",
+  "version": "1.14.0",
   "license": "MIT",
   "description": "一个基于Vue3+TS开发的uni-app组件库，提供70+高质量组件，支持暗黑模式、国际化和自定义主题。",
   "keywords": [
     "wot-design-uni",
-    "wot-ui",
+    "国际化",
     "组件库",
     "vue3",
     "暗黑模式"
@@ -16,7 +16,7 @@
   "repository": "https://github.com/Moonofweisheng/wot-design-uni.git",
   "engines": {
     "HBuilderX": "^3.8.7",
-    "uni-app": "^3.98",
+    "uni-app": "^4.0",
     "uni-app-x": ""
   },
   "dcloudext": {
@@ -40,7 +40,7 @@
     "npmurl": "https://www.npmjs.com/package/wot-design-uni",
     "darkmode": "√",
     "i18n": "√",
-    "widescreen": "√"
+    "widescreen": "x"
   },
   "vetur": {
     "tags": "tags.json",
@@ -59,7 +59,7 @@
       "client": {
         "uni-app": {
           "vue": {
-            "vue2": "x",
+            "vue2": "-",
             "vue3": "√"
           },
           "web": {
@@ -68,7 +68,7 @@
           },
           "app": {
             "vue": "√",
-            "nvue": "x",
+            "nvue": "-",
             "android": {
                 "extVersion": "",
                 "minVersion": "26"
@@ -83,7 +83,7 @@
             "baidu": "-",
             "kuaishou": "-",
             "jd": "-",
-            "harmony": "-",
+            "harmony": "√",
             "qq": "√",
             "lark": "-"
           },
