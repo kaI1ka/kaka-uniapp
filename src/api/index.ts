@@ -22,21 +22,6 @@ export const baseAlova = createAlova({
         const res = (response as UniNamespace.RequestSuccessCallbackResult).data as BaseResponse<any>
         return res
       }
-      // @ts-expect-error uniapp上传文件响应类型
-      else if (response.data) {
-        const res = (response as UniNamespace.UploadFileSuccessCallbackResult).data
-        try {
-          const uploadRes = JSON.parse(res) as BaseResponse<any>
-          return uploadRes
-        }
-        catch (error: any) {
-          throw new Error(error)
-        }
-      }
-      else {
-        const downloadRes = response as UniNamespace.DownloadSuccessData
-        return downloadRes
-      }
     },
     onError(error) {
       console.log('请求失败', error)
