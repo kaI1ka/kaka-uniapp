@@ -17,7 +17,7 @@ export const baseAlova = createAlova({
   responded: {
     onSuccess(response) {
       console.log('响应信息', response)
-      // @ts-expect-error uniapp基本响应类型
+      // @ts-expect-error uniapp 基本响应类型
       if (response.header) {
         const res = (response as UniNamespace.RequestSuccessCallbackResult).data as BaseResponse<any>
         return res

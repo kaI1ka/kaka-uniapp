@@ -12,11 +12,6 @@ export default {
   plugins: [
     cssMacro({
       variantsMap: {
-        'wx': 'MP-WEIXIN',
-        '-wx': {
-          value: 'MP-WEIXIN',
-          negative: true,
-        },
         // 定义多个条件判断
         // mv: {
         //   value: 'H5 || MP-WEIXIN'
