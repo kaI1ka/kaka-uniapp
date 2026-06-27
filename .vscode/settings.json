@@ -3,6 +3,7 @@
   "prettier.enable": false,
   "editor.formatOnSave": false,
   // 自动修复
+  "eslint.enable": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"

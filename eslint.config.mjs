@@ -17,4 +17,9 @@ export default uniHelper({
   rules: {
     'tailwindcss/no-custom-classname': 'off',
   },
+}, {
+  files: ['pnpm-workspace.yaml'],
+  rules: {
+    'pnpm/yaml-enforce-settings': 'off',
+  },
 }])
