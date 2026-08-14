@@ -31,5 +31,9 @@ export function useLoading() {
   function hideLoading() {
     _loading.value = false
   }
-  return { loading, showLoading, hideLoading }
+  return {
+    loading,
+    showLoading,
+    hideLoading,
+  }
 }
