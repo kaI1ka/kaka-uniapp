@@ -3,7 +3,9 @@ import { createAlova } from 'alova'
 import { useLoading } from '@/composables/useLoading'
 import { showToast } from '@/utils'
 
-const { showLoading, hideLoading } = useLoading()
+const {
+  showLoading, hideLoading,
+} = useLoading()
 
 export const baseAlova = createAlova({
   baseURL: import.meta.env.VITE_API_URL,

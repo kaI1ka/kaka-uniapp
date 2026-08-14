@@ -33,6 +33,10 @@
   ],
   // https://github.com/tailwindlabs/tailwindcss/discussions/5258
   "css.customData": [".vscode/tailwind.json"],
+  "tailwindCSS.classAttributes": [
+    "class",
+    ".*-class"
+  ],
   "tailwindCSS.experimental.classRegex": [
     // https://github.com/lukeed/clsx?tab=readme-ov-file#tailwind-support
     ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
@@ -40,5 +44,10 @@
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
-  "typescript.tsdk": "node_modules\\typescript\\lib"
+  "js/ts.tsdk.path": "node_modules\\typescript\\lib",
+  "cssrem.wxssDeviceWidth": 390,
+  "cssrem.wxss": true,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  }
 }

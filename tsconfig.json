@@ -1,26 +1,7 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "jsx": "preserve",
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "useDefineForClassFields": true,
-    "ignoreDeprecations": "6.0",
-    "baseUrl": ".",
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "paths": {
-      "@/*": ["src/*"]
-    },
-    "resolveJsonModule": true,
-    "types": ["vite/client", "@dcloudio/types", "@uni-helper/uni-app-types"],
-    "allowJs": true,
-    "strict": true,
-    "outDir": "./dist",
-    "sourceMap": true,
-    "esModuleInterop": true
-  },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "manifest.config.ts"],
-  "vueCompilerOptions": {
-    "plugins": ["@uni-helper/uni-app-types/volar-plugin"]
-  }
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "files": []
 }

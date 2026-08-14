@@ -2,6 +2,7 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "bradlc.vscode-tailwindcss",
-    "vue.volar"
+    "vue.volar",
+    "cipchk.cssrem"
   ]
 }
